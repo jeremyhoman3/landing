@@ -25,7 +25,7 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(array(
-	'production' => array('107.170.143.104'),
+	'production' => array('silent-sands'),
 	'local' => array('homestead', '.local')
 ));
 
