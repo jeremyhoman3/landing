@@ -24,10 +24,10 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-	'production' => array('silent-sands'),
-	'local' => array('homestead', '.local')
-));
+$env = $app->detectEnvironment(function() 
+{
+	return getenv('ENV_NAME') ?: 'local';
+});
 
 /*
 |--------------------------------------------------------------------------
