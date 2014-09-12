@@ -1,7 +1,7 @@
 <?php
 
-return [
+return array(
 
-	'debug' => true
+	'debug' => true,
 
-];
+);
